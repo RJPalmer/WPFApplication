@@ -8,12 +8,15 @@
         Title="MainWindow" Height="350" Width="525" ResizeMode="NoResize">
     <Grid>
         <DockPanel HorizontalAlignment="Left" Height="100" LastChildFill="False" Margin="123,162,0,0" VerticalAlignment="Top" Width="100"/>
-        <DockPanel HorizontalAlignment="Left" Height="321" LastChildFill="False" VerticalAlignment="Top" Width="519" Margin="0,0,-0.333,-0.333">
-            <StackPanel Height="152" VerticalAlignment="Top" Width="331" Margin="94,153,93.667,0" DockPanel.Dock="Bottom"/>
-            <Image x:Name="image" Height="107" VerticalAlignment="Top" Margin="94,0,93.667,-91" DockPanel.Dock="Top"/>
+        <DockPanel x:Name="basePanel1" HorizontalAlignment="Left" Height="321" LastChildFill="False" VerticalAlignment="Top" Width="519" Margin="0,0,-0.333,-0.333">
+            <StackPanel Height="152" VerticalAlignment="Top" Width="331" Margin="94,153,93.667,0" DockPanel.Dock="Bottom">
+                
+            </StackPanel>
+            <Image x:Name="image" Height="107" VerticalAlignment="Top" Margin="94,0,93.667,-91" DockPanel.Dock="Top" Source="MainScreen.png"/>
         </DockPanel>
         <Button x:Name="button" Content="Button" HorizontalAlignment="Left" Margin="223,222,0,0" VerticalAlignment="Top" Width="75"/>
-        <Button x:Name="exitButton" Content="Exit" HorizontalAlignment="Left" Margin="223,262,0,0" VerticalAlignment="Top" Width="75" Click="exitButton_Click_1"/>
+        <Button x:Name="settingButton" Content="Settings" HorizontalAlignment="Left" Margin="223,259,0,0" VerticalAlignment="Top" Width="75" Click="settingButton_Click"/>
+        <Button x:Name="exitButton" Content="Exit" HorizontalAlignment="Left" Margin="223,292,0,0" VerticalAlignment="Top" Width="75" Click="exitButton_Click_1"/>
 
     </Grid>
 </Window>

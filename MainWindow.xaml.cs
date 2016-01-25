@@ -20,19 +20,31 @@ namespace WpfApplication1
     /// </summary>
     public partial class MainWindow : Window
     {
+
         public MainWindow()
         {
             InitializeComponent();
+            var bc = new BrushConverter();
+            basePanel1.Background = new SolidColorBrush(Color.FromRgb(0, 0, 255));
         }
-
         /// <summary>
-        /// 
+        /// Closes the application
         /// </summary>
         /// <param name="sender"></param>
         /// <param name="e"></param>
         private void exitButton_Click_1(object sender, RoutedEventArgs e)
         {
             this.Close();
+        }
+
+        /// <summary>
+        /// Currently changes the backgroun button green
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void settingButton_Click(object sender, RoutedEventArgs e)
+        {
+            basePanel1.Background = new SolidColorBrush(Color.FromRgb(0, 255, 0));
         }
     }
 }
